@@ -48,7 +48,7 @@ def _(np, sparse, spsolve, x0):
         Gaussian line shape centered at x0 with a standard derivation of sigma and amplitude A.
         """
         return A * np.exp(-((x - x0)**2) / (2 * sigma**2))
-    
+
     def line(x,m,b):
         """
         Line
@@ -63,7 +63,7 @@ def _(np, sparse, spsolve, x0):
         for center, width, amp in bands:
             y += lorentzian(x, center, width, amp)
         return y
-    
+
     def norm(A):
         return A /np.max(A)  
 
@@ -89,7 +89,7 @@ def _(np, sparse, spsolve, x0):
         y_corr   : numpy.ndarray
                    Baseline-korrigiertes Spektrum (y - baseline).
         """
-    
+
         L = len(y)
         D = sparse.diags([1, -2, 1], [0, -1, -2], shape=(L, L-2))
         D = D.dot(D.T)  # zweite Ableitung
@@ -102,12 +102,86 @@ def _(np, sparse, spsolve, x0):
             w = p * (y > baseline) + (1 - p) * (y < baseline)
         y_corr = y - baseline
         return baseline, y_corr
-    
+
     return baseline_als, norm
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(
+        r"""
+    # Raman-Spektrum-Viewer
+
+    Dieses Notebook erlaubt es, einen Ordnerpfad einzugeben, daraus alle `.tsv`-Dateien auszuwählen und das Spektrum zu plotten.
+    """
+    )
+    return
+
+
+@app.cell(hide_code=True)
+def _(folder, mo, os):
+    folder_spectra = '../Data/Eisen1/2025-05-19/'
+    # Alle .tsv-Dateien im Ordner sammeln
+    tsv_files = [f for f in os.listdir(folder_spectra) if f.lower().endswith('.tsv')]
+    if not tsv_files:
+        raise FileNotFoundError(f"Keine .tsv-Dateien in {folder!r} gefunden.")
+
+    dropdown_form = mo.ui.dropdown(
+        options=tsv_files,
+        value=tsv_files[0],
+        label="Spektrum auswählen",
+        searchable=True,
+        full_width=True
+    ).form()
+
+    # 2. Nur die Form ausgeben
+    dropdown_form
+    return dropdown_form, folder_spectra
+
+
 @app.cell
-def _(baseline_als, norm, np, os):
+def _(dropdown_form, folder_spectra, go, mo, np, os):
+    # 1. Solange noch kein Wert da ist, die Cell abbrechen
+    mo.stop(dropdown_form.value is None, "Bitte wähle eine Datei und klicke Submit")
+
+    # 2. Datei einlesen (skip 8 header‐Zeilen)
+    path = os.path.join(folder_spectra, dropdown_form.value)
+    data = np.loadtxt(path, delimiter='\t', skiprows=8)
+
+    calibration = np.loadtxt('../Data/Eisen1/2025-05-19/wn-calibration.tsv', delimiter='\t', skiprows=8)
+    Si_peak = 520.45
+    wn_corr =  calibration[np.argmax(calibration[:,1]),0]-Si_peak
+
+    wn_spectrum = data[:, 0] -wn_corr
+    int_spectrum = data[:, 1]
+    # 3. Plot erstellen und nur das Figure-Objekt zurückgeben
+    measurement = go.Scatter(
+        x=data[:, 0] -wn_corr,
+        y=data[:, 1],
+        mode='lines',
+        name='Raman-Spektrum'
+    )
+
+    layout = go.Layout(
+        title=f'Raman-Spektrum: {dropdown_form.value}',
+        xaxis=dict(title='Wellenzahl (cm⁻¹)'),
+        yaxis=dict(title='Raman Intensität'),
+        showlegend=False
+    )
+    fig2 = go.Figure(data=[measurement], layout=layout)
+    fig2.update_layout(
+        template='simple_white',
+        xaxis_showgrid=True,
+        yaxis_showgrid=True
+    )
+
+    mo.ui.plotly(fig2)
+
+    return (wn_spectrum,)
+
+
+@app.cell
+def _(baseline_als, norm, np, os, wn_spectrum):
     folder = '../Data/Literatur/'
     hematite  = np.loadtxt(os.path.join(folder, 'Hämatit - Fe2O3'     ,'fe2o3-processed.txt'  ),delimiter=',', skiprows=10)
     magnetite = np.loadtxt(os.path.join(folder, 'Magnetit-Fe3O4'      ,'fe3o4-processed.txt'  ),delimiter=',', skiprows=10)
@@ -118,11 +192,15 @@ def _(baseline_als, norm, np, os):
     x_min = max(hematite[:,0].min(),
                 magnetite[:,0].min(),
                 goethite[:,0].min(),
-                lepido[:,0].min())
+                lepido[:,0].min(),
+                wn_spectrum.min()
+               )
     x_max = min(hematite[:,0].max(),
                 magnetite[:,0].max(),
                 goethite[:,0].max(),
-                lepido[:,0].max())
+                lepido[:,0].max(),
+                wn_spectrum.max()
+               )
 
     # 2. Gemeinsamen x-Vektor erzeugen (z.B. 1000 Punkte)
     common_x = np.linspace(x_min, x_max, 1000)
@@ -136,6 +214,7 @@ def _(baseline_als, norm, np, os):
     y_goet = norm(baseline_als(y_goet_raw,lam=1e6,p=0.001,niter=10)[1])
     y_lepid_raw = norm(np.interp(common_x, lepido[:,0],    lepido[:,1]))
     y_lepid    = norm(baseline_als(y_lepid_raw,lam=1e6,p=0.001,niter=10)[1])
+    y_spectrum = norm(np.interp(common_x, wn_spectrum,    lepido[:,1]))
 
     # Lokale Maxima = 
     lm_hem = [17,35,82,194]
@@ -154,7 +233,7 @@ def _(baseline_als, norm, np, os):
     # Extract fitted parameters
     #a_fit, b_fit, c_fit, d_fit, A_g_fit, mu_fit, sigma_fit, m_fit, b0_fit = popt
 
-    return common_x, y_goet, y_hem, y_lepid, y_mag
+    return common_x, folder, y_goet, y_hem, y_lepid, y_mag
 
 
 @app.cell
