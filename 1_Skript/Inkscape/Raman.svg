@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="835.28571"
+   height="421"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   version="1.0"
+   sodipodi:docname="Raman.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="Raman.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <marker
+       style="overflow:visible"
+       id="marker8093"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="5.7"
+       markerHeight="4.14545458"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8091" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="5.6999998"
+       markerHeight="4.1454544"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="arrow2L" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7315"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.15538509"
+       viewBox="0 0 5.3244081 6.15538509"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path7313" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.15538509"
+       viewBox="0 0 5.3244081 6.15538509"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 210.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="835.28571 : 210.5 : 1"
+       inkscape:persp3d-origin="417.64285 : 140.33333 : 1"
+       id="perspective133" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     showgrid="false"
+     inkscape:zoom="2.0154082"
+     inkscape:cx="405.37693"
+     inkscape:cy="121.06728"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
+     inkscape:window-x="1440"
+     inkscape:window-y="0"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="262.4361,240.6629"
+       orientation="0,-1"
+       id="guide10626"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,0)">
+    <path
+       style="stroke:#000000;stroke-width:1px;stroke-opacity:1"
+       d="M 24,331 L 24,46"
+       id="path2223"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;stroke:none;fill-opacity:1"
+       d="M 19,61 L 24,45 L 29,61 L 24,57 L 19,61 z"
+       id="path3201"
+       sodipodi:nodetypes="ccccc" />
+    <switch
+       style="font-size:18px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;font-family:DejaVu Sans;fill-opacity:1"
+       id="switch6234">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none;fill-opacity:1"
+         x="46"
+         y="32"
+         id="text4174-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan4176-yue"
+           x="46"
+           y="32"
+           style="font-size:18px;line-height:1.25;fill:#000000;fill-opacity:1">能量</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:18px;line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         x="46"
+         y="32"
+         id="text4174"><tspan
+           sodipodi:role="line"
+           id="tspan4176"
+           x="46"
+           y="32"
+           style="font-size:18px;line-height:1.25;fill:#000000;fill-opacity:1">Energie</tspan></text>
+    </switch>
+    <switch
+       style="font-size:18px;text-align:start;text-anchor:start;fill:#0000ff;stroke:none;font-family:DejaVu Sans"
+       id="switch6242">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#0000ff;stroke:none"
+         x="36"
+         y="68"
+         id="text5147-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan5149-yue"
+           x="36"
+           y="68"
+           style="font-size:18px;line-height:1.25">虛擬</tspan><tspan
+           sodipodi:role="line"
+           x="36"
+           y="90.795067"
+           id="tspan5151-yue"
+           style="font-size:18px;line-height:1.25">能量水平</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:18px;line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#0000ff;stroke:none"
+         x="36"
+         y="68"
+         id="text5147"><tspan
+           sodipodi:role="line"
+           x="36"
+           y="68"
+           id="tspan5151"
+           style="font-size:18px;line-height:1.25">virtueller Zustand</tspan></text>
+    </switch>
+    <switch
+       style="font-size:18px;text-align:start;text-anchor:start;fill:#00796f;stroke:none;font-family:DejaVu Sans"
+       id="switch6248">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#00796f;stroke:none"
+         x="35"
+         y="322"
+         id="text6124-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan6126-yue"
+           x="35"
+           y="322"
+           style="font-size:18px;line-height:1.25">基本狀態</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:18px;line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#00796f;stroke:none"
+         x="35"
+         y="322"
+         id="text6124"><tspan
+           sodipodi:role="line"
+           id="tspan6126"
+           x="35"
+           y="322"
+           style="font-size:18px;line-height:1.25">Grundzustand</tspan></text>
+    </switch>
+    <path
+       style="fill:none;stroke:#00796f;stroke-width:2;stroke-linecap:butt"
+       d="M 328,321 L 364,321"
+       id="path7101" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path7101"
+       id="use3385"
+       transform="translate(194,0)"
+       width="835"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path7101"
+       id="use3387"
+       transform="translate(392,0)"
+       width="835"
+       height="421" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2"
+       d="M 328,83 L 364,83"
+       id="path9043" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path9043"
+       id="use3640"
+       transform="translate(194,0)"
+       width="835"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path9043"
+       id="use3642"
+       transform="translate(392,-52)"
+       width="835"
+       height="421" />
+    <path
+       style="fill:none;stroke:#ae6b4a;stroke-width:2"
+       d="M 328,269 L 364,269"
+       id="path10016" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path10016"
+       id="use3626"
+       transform="translate(194,0)"
+       width="835"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path10016"
+       id="use3628"
+       transform="translate(392,0)"
+       width="835"
+       height="421" />
+    <path
+       style="fill:none;stroke:black;stroke-width:1;stroke-dasharray:1, 3"
+       d="M 442,401 L 442,28"
+       id="path11003" />
+    <g
+       id="g14917">
+      <path
+         id="path14911"
+         d="M 545,267 L 545,83"
+         style="fill:none;stroke:black;stroke-width:2"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         id="path14913"
+         d="M 551,254 L 545,269 L 539,254 L 545,257 L 551,254 z "
+         style="fill:black;stroke:none" />
+    </g>
+    <g
+       id="g14944">
+      <path
+         id="path14937"
+         d="M 745,314 L 745,31"
+         style="fill:none;stroke:black;stroke-width:2"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         id="path14939"
+         d="M 751,306 L 745,321 L 739,306 L 745,309 z "
+         style="fill:black;stroke:none" />
+    </g>
+    <switch
+       style="font-size:20px;text-align:start;text-anchor:start;fill:#ae6b4a;stroke:none;font-family:DejaVu Sans"
+       id="switch6275">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#ae6b4a;stroke:none"
+         x="35"
+         y="264"
+         id="text16931-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan16933-yue"
+           x="35"
+           y="264"
+           style="font-size:20px;line-height:1.25">第一次興奮嘅</tspan><tspan
+           sodipodi:role="line"
+           x="35"
+           y="289.32785"
+           id="tspan16935-yue"
+           style="font-size:20px;line-height:1.25">震動條件</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:18px;line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#ae6b4a;stroke:none"
+         x="35"
+         y="264"
+         id="text16931"><tspan
+           sodipodi:role="line"
+           id="tspan16933"
+           x="35"
+           y="264"
+           style="font-size:18px;line-height:1.25">erster angeregter</tspan><tspan
+           sodipodi:role="line"
+           x="35"
+           y="286.5"
+           id="tspan16935"
+           style="font-size:18px;line-height:1.25">Vibrationszustand</tspan></text>
+    </switch>
+    <switch
+       style="font-size:9px;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+       id="switch6295"
+       transform="translate(55.50439,-314.20837)">
+      <text
+         id="text6808"
+         y="504.30463"
+         x="254.38914"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="504.30463"
+           x="254.38914"
+           id="tspan6810"
+           sodipodi:role="line"
+           style="font-size:9px;line-height:1.25" /></text>
+    </switch>
+    <switch
+       style="font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+       id="switch6279"
+       transform="translate(55.50439,-314.20837)">
+      <text
+         id="text6790"
+         y="500.3392"
+         x="213.69904"
+         style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="500.3392"
+           x="213.69904"
+           id="tspan6792"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:7.15;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         x="155.00584"
+         y="516.99988"
+         id="text10515"><tspan
+           sodipodi:role="line"
+           id="tspan10513"
+           x="155.00584"
+           y="516.99988" /></text>
+    </switch>
+    <switch
+       style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+       id="switch6283"
+       transform="translate(55.50439,-314.20837)">
+      <text
+         id="text6794"
+         y="500.37207"
+         x="225.9081"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="500.37207"
+           x="225.9081"
+           id="tspan6796"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:1.25">=</tspan></text>
+    </switch>
+    <switch
+       style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+       id="switch6287"
+       transform="translate(55.50439,-314.20837)">
+      <text
+         id="text6798"
+         y="500.3392"
+         x="233.22667"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="500.3392"
+           x="233.22667"
+           id="tspan6800"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462">0</tspan></tspan></text>
+    </switch>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       x="288.07587"
+       y="177.49976"
+       id="text10480-5"><tspan
+         sodipodi:role="line"
+         id="tspan10478-5"
+         x="288.07587"
+         y="177.49976"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       x="263.46704"
+       y="290.63043"
+       id="text10480-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan10478-5-1"
+         x="263.46704"
+         y="290.63043"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+    <switch
+       style="font-size:18px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;font-family:DejaVu Sans"
+       id="switch6305">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="344.38245"
+         y="354.1225"
+         id="text18020-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan18022-yue"
+           x="344.38245"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">雷利</tspan><tspan
+           sodipodi:role="line"
+           x="344.38245"
+           y="376.91757"
+           id="tspan18024-yue"
+           style="font-size:18px;line-height:1.25">散射</tspan></text>
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="344.38245"
+         y="354.1225"
+         id="text18020"><tspan
+           sodipodi:role="line"
+           id="tspan18022"
+           x="344.38245"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">Rayleigh-</tspan><tspan
+           sodipodi:role="line"
+           x="344.38245"
+           y="376.6225"
+           id="tspan18024"
+           style="font-size:18px;line-height:1.25">Streuung</tspan></text>
+    </switch>
+    <switch
+       style="font-size:18px;text-align:center;text-anchor:middle;fill:black;stroke:none;font-family:DejaVu Sans"
+       id="switch6313">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="537.28094"
+         y="354.1225"
+         id="text18026-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan18028-yue"
+           x="537.28094"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">斯托克斯</tspan><tspan
+           sodipodi:role="line"
+           x="537.28094"
+           y="376.91757"
+           id="tspan18030-yue"
+           style="font-size:18px;line-height:1.25">散射</tspan></text>
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="537.28094"
+         y="354.1225"
+         id="text18026"><tspan
+           sodipodi:role="line"
+           id="tspan18028"
+           x="537.28094"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">Stokes-</tspan><tspan
+           sodipodi:role="line"
+           x="537.28094"
+           y="376.6225"
+           id="tspan18030"
+           style="font-size:18px;line-height:1.25">Streuung</tspan></text>
+    </switch>
+    <switch
+       style="font-size:18px;text-align:center;text-anchor:middle;fill:black;stroke:none;font-family:DejaVu Sans"
+       id="switch6321">
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="742.34192"
+         y="354.1225"
+         id="text18032-yue"
+         systemLanguage="yue"><tspan
+           sodipodi:role="line"
+           id="tspan18034-yue"
+           x="742.34192"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">反斯托克斯   </tspan><tspan
+           sodipodi:role="line"
+           x="742.34192"
+           y="376.91757"
+           id="tspan18036-yue"
+           style="font-size:18px;line-height:1.25">散射</tspan></text>
+      <text
+         xml:space="preserve"
+         style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         x="742.34192"
+         y="354.1225"
+         id="text18032"><tspan
+           sodipodi:role="line"
+           id="tspan18034"
+           x="742.34192"
+           y="354.1225"
+           style="font-size:18px;line-height:1.25">Anti-Stokes-</tspan><tspan
+           sodipodi:role="line"
+           x="742.34192"
+           y="376.6225"
+           id="tspan18036"
+           style="font-size:18px;line-height:1.25">Streuung</tspan></text>
+    </switch>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path11003"
+       id="use3644"
+       transform="translate(193,0)"
+       width="835"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use4629"
+       id="use4637"
+       transform="matrix(1,0,0,-1,14,404)"
+       width="835.28571"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use4629"
+       id="use4639"
+       transform="translate(194,0)"
+       width="835"
+       height="421" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use4629"
+       id="use4641"
+       transform="translate(394,-52)"
+       width="835"
+       height="421" />
+    <g
+       id="g6932"
+       transform="translate(16.56927,-231.8524)">
+      <g
+         id="g6934"
+         transform="translate(14.16771,30.85413)">
+        <switch
+           style="font-size:16px;text-align:end;text-anchor:end;fill:#000000;stroke:none;font-family:DejaVu Sans"
+           id="switch6418">
+          <text
+             id="text6936"
+             y="500.3392"
+             x="213.69904"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.3392"
+               x="213.69904"
+               id="tspan6938"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">ΔE</tspan></text>
+        </switch>
+        <switch
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;font-family:DejaVu Sans"
+           id="switch6422">
+          <text
+             id="text6940"
+             y="500.37207"
+             x="225.9081"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.37207"
+               x="225.9081"
+               id="tspan6942"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">=</tspan></text>
+        </switch>
+        <switch
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Sans"
+           id="switch6426">
+          <text
+             id="text6944"
+             y="500.3392"
+             x="233.22667"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.3392"
+               x="233.22667"
+               id="tspan6946"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan11415">v</tspan></tspan></text>
+        </switch>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,-1,26,750)"
+       id="use4629">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2"
+         d="M 313,664 L 313,429"
+         id="path4633" />
+      <path
+         style="fill:#000000;stroke:none"
+         d="M 319,652 L 313,667 L 307,652 L 313,656 L 319,652 z"
+         id="path4635"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g2529"
+       transform="translate(441.6661,-347.1899)">
+      <g
+         id="g11702-8"
+         transform="translate(-55.835717,345.7865)">
+        <text
+           id="text6790-6-9-6-0"
+           y="186.72701"
+           x="386.90543"
+           style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="186.72701"
+             x="386.90543"
+             id="tspan6792-9-6-7-4"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+        <switch
+           style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+           id="switch6283-1-3-0-7"
+           transform="translate(173.20638,-313.61219)">
+          <text
+             id="text6794-4-1-7-6"
+             y="500.37207"
+             x="225.9081"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.37207"
+               x="225.9081"
+               id="tspan6796-1-5-3-1"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">=</tspan></text>
+        </switch>
+        <switch
+           style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+           id="switch6287-4-8-3-6"
+           transform="translate(173.20638,-313.61219)">
+          <text
+             id="text6798-6-0-2-1"
+             y="500.3392"
+             x="233.22667"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.3392"
+               x="233.22667"
+               id="tspan6800-1-9-1-4"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462-0-2-4-9">0</tspan><tspan
+   style="font-size:12px"
+   id="tspan11806">+</tspan>ν<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan11659-6">v</tspan></tspan></text>
+        </switch>
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+           x="405.77786"
+           y="178.09593"
+           id="text10480-5-2-4-0-4"><tspan
+             sodipodi:role="line"
+             id="tspan10478-5-4-3-0-2"
+             x="405.77786"
+             y="178.09593"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+           x="428.58572"
+           y="178.41811"
+           id="text10480-5-2-4-0-2-8"
+           inkscape:transform-center-x="6.3153071"
+           inkscape:transform-center-y="-2.4559528"><tspan
+             sodipodi:role="line"
+             id="tspan10478-5-4-3-0-5-4"
+             x="428.58572"
+             y="178.41811"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#marker8093);marker-end:url(#Arrow2);paint-order:stroke markers fill"
+       d="m 318.15294,276.76772 v 36.26039"
+       id="path7341"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g10639"
+       transform="translate(0,-0.59659842)">
+      <text
+         id="text6790-6"
+         y="186.72701"
+         x="386.90543"
+         style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="186.72701"
+           x="386.90543"
+           id="tspan6792-9"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         id="switch6283-1"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6794-4"
+           y="500.37207"
+           x="225.9081"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.37207"
+             x="225.9081"
+             id="tspan6796-1"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">=</tspan></text>
+      </switch>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+         id="switch6287-4"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6798-6"
+           y="500.3392"
+           x="233.22667"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.3392"
+             x="233.22667"
+             id="tspan6800-1"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462-0">0</tspan></tspan></text>
+      </switch>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         x="405.77786"
+         y="178.09593"
+         id="text10480-5-2"><tspan
+           sodipodi:role="line"
+           id="tspan10478-5-4"
+           x="405.77786"
+           y="178.09593"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+    </g>
+    <g
+       id="g10639-7"
+       transform="translate(98.939815,-1.4033986)">
+      <text
+         id="text6790-6-9"
+         y="186.72701"
+         x="386.90543"
+         style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="186.72701"
+           x="386.90543"
+           id="tspan6792-9-6"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         id="switch6283-1-3"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6794-4-1"
+           y="500.37207"
+           x="225.9081"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.37207"
+             x="225.9081"
+             id="tspan6796-1-5"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">=</tspan></text>
+      </switch>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+         id="switch6287-4-8"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6798-6-0"
+           y="500.3392"
+           x="233.22667"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.3392"
+             x="233.22667"
+             id="tspan6800-1-9"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462-0-2">0</tspan></tspan></text>
+      </switch>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         x="405.77786"
+         y="178.09593"
+         id="text10480-5-2-4"><tspan
+           sodipodi:role="line"
+           id="tspan10478-5-4-3"
+           x="405.77786"
+           y="178.09593"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+    </g>
+    <g
+       id="g10639-7-4"
+       transform="translate(296.81944,-0.70169778)">
+      <text
+         id="text6790-6-9-1"
+         y="186.72701"
+         x="386.90543"
+         style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+         xml:space="preserve"><tspan
+           y="186.72701"
+           x="386.90543"
+           id="tspan6792-9-6-9"
+           sodipodi:role="line"
+           style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+         id="switch6283-1-3-6"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6794-4-1-70"
+           y="500.37207"
+           x="225.9081"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.37207"
+             x="225.9081"
+             id="tspan6796-1-5-9"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">=</tspan></text>
+      </switch>
+      <switch
+         style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+         id="switch6287-4-8-7"
+         transform="translate(173.20638,-313.61219)">
+        <text
+           id="text6798-6-0-3"
+           y="500.3392"
+           x="233.22667"
+           style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="500.3392"
+             x="233.22667"
+             id="tspan6800-1-9-15"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462-0-2-6">0</tspan></tspan></text>
+      </switch>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         x="405.77786"
+         y="178.09593"
+         id="text10480-5-2-4-4"><tspan
+           sodipodi:role="line"
+           id="tspan10478-5-4-3-5"
+           x="405.77786"
+           y="178.09593"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+    </g>
+    <g
+       id="g10639-7-0"
+       transform="translate(190.51177,-0.70169775)">
+      <g
+         id="g11702"
+         transform="translate(-4)">
+        <text
+           id="text6790-6-9-6"
+           y="186.72701"
+           x="386.90543"
+           style="line-height:0;font-family:'DejaVu Sans';text-align:end;text-anchor:end;fill:#000000;stroke:none"
+           xml:space="preserve"><tspan
+             y="186.72701"
+             x="386.90543"
+             id="tspan6792-9-6-7"
+             sodipodi:role="line"
+             style="font-size:16px;line-height:7.15;stroke:none;stroke-opacity:1">ΔE</tspan></text>
+        <switch
+           style="font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+           id="switch6283-1-3-0"
+           transform="translate(173.20638,-313.61219)">
+          <text
+             id="text6794-4-1-7"
+             y="500.37207"
+             x="225.9081"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.37207"
+               x="225.9081"
+               id="tspan6796-1-5-3"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">=</tspan></text>
+        </switch>
+        <switch
+           style="font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+           id="switch6287-4-8-3"
+           transform="translate(173.20638,-313.61219)">
+          <text
+             id="text6798-6-0-2"
+             y="500.3392"
+             x="233.22667"
+             style="line-height:0%;font-family:'DejaVu Sans';text-align:start;text-anchor:start;fill:#000000;stroke:none"
+             xml:space="preserve"><tspan
+               y="500.3392"
+               x="233.22667"
+               id="tspan6800-1-9-1"
+               sodipodi:role="line"
+               style="font-size:16px;line-height:1.25">ν<tspan
+   style="font-size:8px;baseline-shift:sub"
+   id="tspan10462-0-2-4">0</tspan>- ν<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan11659">v</tspan></tspan></text>
+        </switch>
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+           x="405.77786"
+           y="178.09593"
+           id="text10480-5-2-4-0"><tspan
+             sodipodi:role="line"
+             id="tspan10478-5-4-3-0"
+             x="405.77786"
+             y="178.09593"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:10.6667px;line-height:0.65;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+           x="430.58572"
+           y="178.41811"
+           id="text10480-5-2-4-0-2"
+           inkscape:transform-center-x="6.3153071"
+           inkscape:transform-center-y="-2.4559528"><tspan
+             sodipodi:role="line"
+             id="tspan10478-5-4-3-0-5"
+             x="430.58572"
+             y="178.41811"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.8;stroke-dasharray:none">~</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
