@@ -183,10 +183,6 @@ def _(
     go,
     make_subplots,
     mo,
-    per_a,
-    per_b,
-    per_c,
-    per_d,
     s1,
     s2,
     s3,
@@ -245,7 +241,7 @@ def _(
     fig.add_trace(go.Scatter(x=common_x, y=y_combined, mode='lines', name=f'Fit (A={s_a:.2f}, B={s_b:.2f}, C={s_c:.2f}, D={s_d:.2f})',
                              line=dict(color='black', width=2)), row=1, col=1)
     # Test spectrum 
-    fig.add_trace(go.Scatter(x=common_x, y=y_spectrum, mode='lines', name=f'Spektrum (A={per_a:.2f}, B={per_b:.2f}, C={per_c:.2f}, D={per_d:.2f})',
+    fig.add_trace(go.Scatter(x=common_x, y=y_spectrum, mode='lines', name=f'Spektrum',
                              line=dict(color='red', width=2)), row=1, col=1)
 
 
