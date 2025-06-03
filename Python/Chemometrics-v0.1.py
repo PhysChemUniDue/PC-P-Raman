@@ -18,14 +18,11 @@ def _():
     from scipy import sparse
     from scipy.sparse.linalg import spsolve
     import os 
-    return go, make_subplots, mo, np, os, random, sparse, spsolve
+    return go, make_subplots, mo, np, os, sparse, spsolve
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(np, sparse, spsolve, x0):
-    # Raman shift in cm-1
-    x = np.linspace(50, 4000, 1000)
-
     def lorentzian(x, x0, gamma, A):
         """
         Lorentzian line shape centered at x0 with full width at half maximum gamma and amplitude A.
@@ -96,7 +93,16 @@ def _(np, sparse, spsolve, x0):
 
 
 @app.cell
-def _(baseline_als, norm, np, os, random):
+def _(np):
+    # Daten Laden
+    data = np.loadtxt('Hier den Pfad zur .tsv Datei einfuegen', delimiter='\t', skiprows=8)
+
+
+    return (data,)
+
+
+@app.cell
+def _(baseline_als, data, norm, np, os):
     folder = '../Data/Literatur/'
     # Referenzspektren laden (Hämatit, Magnetit, Goethit, Lepidokrit)
     hematite = np.loadtxt(os.path.join(folder, 'Hämatit - Fe2O3', 'fe2o3-processed-2.txt'), delimiter=',', skiprows=10)
@@ -109,11 +115,15 @@ def _(baseline_als, norm, np, os, random):
     x_min = max(hematite[:,0].min(),
                 magnetite[:,0].min(),
                 goethite[:,0].min(),
-                lepido[:,0].min())
+                lepido[:,0].min(),
+                data[:,0].min()
+               )
     x_max = min(hematite[:,0].max(),
                 magnetite[:,0].max(),
                 goethite[:,0].max(),
-                lepido[:,0].max())
+                lepido[:,0].max(),
+                data[:,0].max()
+               )
 
     # 2. Gemeinsamen x-Vektor erzeugen (z.B. 1000 Punkte)
     common_x = np.linspace(x_min, x_max, 1000)
@@ -131,22 +141,13 @@ def _(baseline_als, norm, np, os, random):
     y_lepid_raw = norm(np.interp(common_x, lepido[:, 0], lepido[:, 1]))
     y_lepid = norm(baseline_als(y_lepid_raw, lam=1e6, p=0.001, niter=10)[1])
 
+    y_spectrum = norm(np.interp(common_x, data[:, 0], data[:, 1]))
+
     spectra = [y_hem,y_mag,y_goet,y_lepid]
 
-    # Random Konvolution der Spektren 
-    a = round(random.uniform(0.01, 1.0), 2)
-    b = round(random.uniform(0.01, 1.0), 2)
-    c = round(random.uniform(0.01, 1.0), 2)
-    d = round(random.uniform(0.01, 1.0), 2)
 
-    per_a = a/ (a+b+c+d) * 100 
-    per_b = b/ (a+b+c+d) * 100 
-    per_c = c/ (a+b+c+d) * 100 
-    per_d = d/ (a+b+c+d) * 100 
 
-    y_spectrum = norm(a * spectra[0] + b * spectra[1] +c * spectra[2] + d * spectra[3])
-
-    return common_x, per_a, per_b, per_c, per_d, spectra, y_spectrum
+    return common_x, spectra, y_spectrum
 
 
 @app.cell(hide_code=True)
