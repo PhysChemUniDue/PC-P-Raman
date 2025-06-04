@@ -9,7 +9,7 @@
     \vspace{0.5cm}
 \end{center}
 \section{Molekül und Festkörperschwingungen}\label{sec:vib}
-Die Schwingungsspektroskopie beschäftigt sich damit, mit der Anregung von Molekül- und Festkörperschwingungen. 
+Die Schwingungsspektroskopie beschäftigt sich mit der Anregung von Molekül- und Festkörperschwingungen. 
 Im Spektrum zeigen sich diese Schwingungen als bestimmte Linien oder Banden bei charakteristischen Energien. 
 Die genaue energetische Lage dieser Banden kann relativ einfach aus den Bindungseigenschaften der Moleküle oder Kristalle abgeschätzt werden.
 Hierbei kann die Bindung zwischen zwei Atomen als eine Art Feder betrachtet werden. Aus der klassischen Mechanik folgt, dass die 
@@ -50,7 +50,7 @@ Beim Raman-Effekt handelt es sich um einen sogenannten Streuprozess. Das heißt,
 dabei das System kurzzeitig in einen virtuellen Zustand, und direkt danach folgt die Abgabe eines gestreuten Photons. Dieser virtuelle Zustand 
 ist kein \glqq{}echter\grqq{} angeregter Zustand, wie er zum Beispiel bei der Fluoreszenz auftritt. Er hat also keine definierte Lebensdauer 
 im Sinne einer messbaren Aufenthaltszeit, sondern entsteht und zerfällt praktisch sofort, die Lebensdauer des angeregten virtuellen Zustand 
-lieg somit im Bereich von weniger als 1~fs oder noch weniger.\\
+liegt somit im Bereich von weniger als 1~fs.\\
 Wird die Raman-Streuung mit der IR-Spektroskopie verglichen, so unterscheidet sich der Raman-Effekt von der IR-Absorption in wesentlichen Punkten.
 Zum einen ist die Raman-Streuung ein nicht resonanter Prozess, das heißt, die Energie des einfallenden Lichts entspricht nicht zwangsläufig der Energiedifferenz zwischen 
 zwei Zuständen unseres Systems. Der Raman-Effekt wird demnach unabhängig von der Wellenlänge des einfallenden Lichts beobachtet.
@@ -76,7 +76,7 @@ Raman-aktiv, während solche mit Dipolmomentänderung IR-aktiv sind, dadurch erg
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{1_Skript/Inkscape/Polarisierbarkeit.png}
-    \caption{Schematische Darstellung der Polarisierbarkeit eines Moleküls. Die Polarisierbarkeit ändert sich während der Schwingung, was für die Raman-Streuung notwendig ist.}
+    \caption{Schematische Darstellung der Polarisierbarkeit eines Moleküls. Die Polarisierbarkeit  in blau  ändert sich während der Schwingung, was für die Raman-Streuung notwendig ist.}
     \label{fig:Polarisierbarkeit}
 \end{figure}
 
@@ -89,13 +89,21 @@ rekonstruiert wetden kann.\\
 
 Das detektierte Raman-Streusignal hat dann die Energie des einfalenden Lichts ($\tilde{\nu}_0)$ plus oder minus der Energieänderung, die durch die Schwingung 
 des Moleküls beziehungsweise Festkörpers ($\tilde{\nu}_v)$ verursacht wird.
-Ist das detektierte Photon energieärmer so wir dieser Effekt als Stokes-Raman bezeichnet, während der seltener auftretende energieerhöhte Anteil als Anti-Stokes-Raman bezeichnet wird.
+Ist das detektierte Photon energieärmer so wir dieser Effekt als Stokes-Raman bezeichnet, während der seltener auftretende energieerhöhter Anteil als Anti-Stokes-Raman bezeichnet wird.
 \begin{eqnarray}
     \tilde{\nu}_{Stokes} = \tilde{\nu}_0 - \tilde{\nu}_v 
     \label{eq:stokes} \\
     \tilde{\nu}_{Anti-Stokes} = \tilde{\nu}_0 + \tilde{\nu}_v
     \label{eq:anti-stokes}  
 \end{eqnarray}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{1_Skript/Inkscape/Raman.png}
+    \caption{Schematische Darstellung des Raman-Effekts. Ein Photon trifft auf ein Molekül, regt es in einen virtuellen Zustand an und wird dann mit einer Frequenzänderung gestreut.}
+    \label{fig:Raman}
+\end{figure}
+
 
 Die relativen Anteile der Stokes- und Anti-Stokes-Banden sind direkt von der Besetzung der beteiligten Schwingungszustände und demnach von der Boltzmannverteilung abhängig.
 
@@ -108,7 +116,7 @@ Diese unterscheid sich grundlegend von der IR-Absorption, bei der die Energie de
 
 Jede beobachtbare Bande ob in IR- oder Raman-Spektren lässt sich mindestens durch drei Parameter charakterisieren: eine Energie (meist in cm$^{-1}$ angegeben), 
 die Intensität und die spektrale Breite der Bande. Die Energie entspricht dabei der Schwingungsenergie, die Intensität liefert Informationen über die Raman-Aktivität und die Anzahl der Oszillatoren, 
-während die Halbwertsbreite (engl. \textit{full width at half maximum},FWHM) Rückschlüsse auf die Lebensdauer des Schwingungszustands oder auf Störungen im Festkörper geben kann. 
+während die Halbwertsbreite (engl. \textit{full width at half maximum}, FWHM) Rückschlüsse auf die Lebensdauer des Schwingungszustands oder auf Störungen im Festkörper geben kann. 
 Die Halbwertsbreite einer solchen Schwingungsbande, sowohl im IR- als auch im Raman-Spektrum, wird im Prinzip durch die Lebensdauer ($\tau$) des angeregten Schwingungszustands begrenzt:
 \begin{equation}
     \Delta\tilde{\nu} = \frac{1}{2\pi c\tau}
@@ -120,7 +128,7 @@ Mit:
     \item $\tau$: Lebensdauer des angeregten Schwingungszustands [s]
 \end{itemize}
 Die Halbwertsbreite ist also umgekehrt proportional zur Lebensdauer des angeregten Schwingungszustands. Je kürzer die Lebensdauer, desto breiter die Bande. Dies 
-ist eine direkte Folge der nergie-Zeit-Unschärferelation:
+ist eine direkte Folge der Energie-Zeit-Unschärferelation:
 \begin{equation}
     \Delta E \cdot \Delta t \geq \frac{\hbar}{2}
 \end{equation}
@@ -139,7 +147,7 @@ In der Praxis wird eine solche Bande häufig durch eine Lorentzfunktion beschrie
 \end{equation}
 Mit:
 \begin{itemize}
-    \item $I(\tilde{\nu})$: Intensität bei der Frequenzverschiebung $\tilde{\nu}$ [a.u.]
+    \item $I(\tilde{\nu})$: Intensität bei der Wellenzahl $\tilde{\nu}$ [a.u.]
     \item $I_0$: Maximale Intensität der Bande [a.u.]
     \item $\tilde{\nu}_0$: Bandenposition  [cm$^{-1}$]
     \item $\Gamma$: Halbwertsbreite [cm$^{-1}$]
@@ -147,26 +155,19 @@ Mit:
 
 In komplexeren Fällen können auch Profile mit mehr als drei Parametern wie z.B. Voigt-Profile verwendet werden, welche aber an dieser Stelle nicht weiter behandelt werden sollen.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{1_Skript/Inkscape/Raman.png}
-    \caption{Schematische Darstellung des Raman-Effekts. Ein Photon trifft auf ein Molekül, regt es in einen virtuellen Zustand an und wird dann mit einer Frequenzänderung gestreut.}
-    \label{fig:Raman}
-\end{figure}
-
 
 \subsection{Raman-Spektren von Metallen und Metalloxiden}
 
 Metalle und Metalloxide zeigen im Raman-Verhalten deutliche Unterschiede. Für das Auftreten von Raman-Banden muss sich, wie zuvor erwähnt, die Polarisierbarkeit während einer Schwingung ändern
 Reine Metalle besitzen in der Regel keine Raman-aktiven Gittermoden. Da einerseits in einem monatomaren Kristall keine optischen Phononen existieren und andererseits die frei beweglichen 
 Leitungselektronen die elektromagnetische Anregung stark abschirmen.
-Viele Metalle zeigen daher keine ausgeprägten Raman-Banden. Metalloxide hingegen bestehen aus verschiedenen Atomarten pro Einheitszelle und haben polare Bindungen. Ihre Gitter besitzten demnach 
+Viele Metalle zeigen daher keine ausgeprägten Raman-Banden. Metalloxide hingegen bestehen aus verschiedenen Atomarten pro Einheitszelle und haben polare Bindungen. Ihre Gitter besitzen demnach 
 optische Phononen, die Raman-aktiv sein können. Infolgedessen liefern Metalloxide (z.B. \ce{TiO2}, \ce{Fe2O3}, \ce{MgO} etc.) meist intensive Raman-Spektren mit 
 charakteristischen Banden im Bereich von 200-800~cm$^-1$ auf, während bei reinen Metallen oft nur ein Untergrund, welcher auf die thermische Anregung durch den Laser zurückzuführen ist, beobachtbar sind.
 \clearpage
 \section{Auswertung von Raman-Spektren}\label{sec:analysis}
 Ein experimentell aufgenommenes Raman-Spektrum setzt sich meist aus mehreren Beiträgen zusammen. Idealerweise werden Raman-Banden bei den charakteristischen Verschiebungen beobachtet, die 
-dem untersuchten Material entsprechen. In der Praxis liegen diese Banden jedoch auf häufig auf einer Basislinie bzw. einem breiten Hintergrund, der verschiedene Ursachen haben kann. Sowohl 
+dem untersuchten Material entsprechen. In der Praxis liegen diese Banden jedoch häufig auf einer Basislinie bzw. einem breiten Hintergrund, der verschiedene Ursachen haben kann. Sowohl 
 der Messaufbau als auch die Probe selbst können Hintergrundsignale verursachen. Insbesondere können hohe Laserintensitäten zu einer lokalen Erwärmung der Probe führen, was eine starke, 
 breitbandige Schwarzkörper-Emission oder auch eine  Fluoreszenz hervorrufen kann. Diese beiden Effekte können einen breiten und intensiven Hintergrund erzeugen, der das eigentliche 
 Raman-Signal überlagert und unter Umständen sogar vollständig verdecken kann. Alle Effekte überlagern sich additiv, sodass die eigentlichen Raman-
@@ -202,17 +203,17 @@ Die Auswertung experimenteller Raman-Spektren erfolgt in mehreren aufeinanderfol
     \item \textbf{Entfernen von Störsignalen}
         \begin{itemize}
         \item Aufgrund von kosmischer Strahlung kann es zu sogenannten Artefakten kommen. Diese sind in der Regel als 
-        Peaks, die deutlich uner der FWHM von Raman-Banden liegen (1-10~cm$^{-1}$), zu erkennen. Meist sind diese nur
+        Peaks, die deutlich unter der FWHM von Raman-Banden liegen (1-10~cm$^{-1}$), zu erkennen. Meist sind diese nur
          einzelne Pixel breit und können durch eine einfache Interpolation entfernt werden.
         \item Werden Artefakte vermutet, welche breiter als einzelne Pixel sind. So ist hier Vorsicht geboten. Eine einfache Interpolation
         kann zu einer Verfälschung der Daten führen. Die Identifikation von breiten Artefakten kann nur durch den Vergleich 
         mit Referenzen erfolgen. Aus diesem Grund sollte immer für eine Erhöhung des Signal-Rausch-Verhältnisses eher die Spektrenanzahl 
         erhöht werden, als die Messzeit zu verlängern.
     \end{itemize}
-    \item \textbf{Normalisierung}
+    \item \textbf{Normierung}
     \begin{itemize}
         \item Anpassung der Intensität, um spektrenübergreifende Vergleichbarkeit zu ermöglichen.
-        \item Methoden: Normierung auf maximale Peak-Intensität. Alle Intensitäten werden durch die Intensität des stärksten Peaks geteilt, sodass dieser auf 1 normiert wird.
+        \item Methoden: Normierung auf die maximale Peak-Intensität. Alle Intensitäten werden durch die Intensität des stärksten Peaks geteilt, sodass dieser auf 1 normiert wird.
         \item Alternativ: Normierung auf einen bestimmten Referenzpeak.
     \end{itemize}
     \item \textbf{Quantitative Datenanalyse}
@@ -245,8 +246,8 @@ Die wichtigsten technischen Parameter und Messbedingungen des Raman-Mikroskops s
         Leistungsbereich auf Probe        & 0.1--65~mW                  \\
         Spektralbereich                   & 450--1800~cm$^{-1}$       \\
         Spektrale Auflösung               & 1.5--3~cm$^{-1}$        \\
-        Laterale (räumliche) Auflösung    & 600~nm                        \\
-        Axiale Auflösung (Konfokalität)   & 1500~nm                       \\
+        Laterale  Auflösung  (xy)         & 600~nm                        \\
+        Axiale Auflösung (z)              & 1500~nm                       \\
         Mikroskopiemodus                  & Rückstreuung            \\
         Maximaler Verfahrweg              & 102x102x25~mm$^3$ \\
         Lateraler Schritt                 & 100~nm                        \\
@@ -258,7 +259,7 @@ Die wichtigsten technischen Parameter und Messbedingungen des Raman-Mikroskops s
 
 \clearpage
 \section{Literatur}
-Die in diesem Versuch behandelten Themenkreise finden sich in der folgenden Literatur ausführlich behandelt:
+Die in diesem Versuch behandelten Themenkreise finden sich in der folgenden Literatur ausführlich dargestellt:
 \begin{enumerate}
     \item B. Schrader, Infrared and Raman-Spectroscopy, Verlag Chemie, Weinheim, 1980, Kap. 2
     \item G. Herzberg, Molecular Spectra and Molecular Structure, Vol. II, Infrared and Raman Spectra of Polyatomic Molecules, Krieger 1991.
