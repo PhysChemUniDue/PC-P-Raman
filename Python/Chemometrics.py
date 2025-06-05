@@ -202,7 +202,7 @@ def _(
     y4 = s4.value * spectra[3]
 
     # Kombination 
-    y_combined = y1+y2+y3+y4 + s5.value * common_x + s6.value
+    y_combined = y1+y2+y3+y4 + (s5.value * common_x + s6.value)
     y_residual = y_spectrum - y_combined
 
     s_a = s1.value/(s1.value+s2.value+s3.value+s4.value)*100
