@@ -27,12 +27,12 @@ def _(mo):
 
 @app.cell(hide_code=True)
 def _(mo, os):
-    folder = '../Data/Tests/Graphite/'
+    folder = '../Data/SS25Gr1/Mischung1/'
     # Alle .tsv-Dateien im Ordner sammeln
     tsv_files = [f for f in os.listdir(folder) if f.lower().endswith('.tsv')]
     if not tsv_files:
         raise FileNotFoundError(f"Keine .tsv-Dateien in {folder!r} gefunden.")
-    
+
     dropdown_form = mo.ui.dropdown(
         options=tsv_files,
         value=tsv_files[0],

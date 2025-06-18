@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.13.7"
+__generated_with = "0.12.2"
 app = marimo.App(width="medium")
 
 
@@ -17,8 +17,23 @@ def _():
     from scipy.signal import argrelextrema
     from scipy import sparse
     from scipy.sparse.linalg import spsolve
-    import os 
-    return go, make_subplots, mo, np, os, sparse, spsolve
+    import os
+    return (
+        FloatSlider,
+        HuberRegressor,
+        argrelextrema,
+        curve_fit,
+        go,
+        interact,
+        make_subplots,
+        mo,
+        nnls,
+        np,
+        os,
+        random,
+        sparse,
+        spsolve,
+    )
 
 
 @app.cell(hide_code=True)
@@ -43,7 +58,7 @@ def _(np, sparse, spsolve, x0):
 
     def raman_spectrum(x, bands):
         """
-        Sum of Lorentzian bands. `bands` is a list of tuples (center, width, amplitude).
+        Sum of Lorentzian bands. bandsbands is a list of tuples (center, width, amplitude).
         """
         y = np.zeros_like(x)
         for center, width, amp in bands:
@@ -88,125 +103,78 @@ def _(np, sparse, spsolve, x0):
             w = p * (y > baseline) + (1 - p) * (y < baseline)
         y_corr = y - baseline
         return baseline, y_corr
-
-    return baseline_als, norm
+    return baseline_als, gauss, line, lorentzian, norm, raman_spectrum
 
 
 @app.cell
 def _(np):
-    # Daten Laden
-    data = np.loadtxt('../Data/Eisen1/2025-05-19/Eisen1-007.tsv', delimiter='\t', skiprows=8)
+    # Daten der Mischung laden
+    data = np.loadtxt('../Data/SS25Gr1/Mischung1/001.tsv', delimiter='\t', skiprows=8)
+    dark_data = np.loadtxt('../Data/SS25Gr1/Silicium/001.tsv', delimiter='\t', skiprows=8)
 
 
-    return (data,)
+    return dark_data, data
 
 
 @app.cell
-def _(baseline_als, data, norm, np, os):
-    folder = '../Data/Literatur/'
+def _(dark_data, data, norm, np):
     # Referenzspektren laden (Hämatit, Magnetit, Goethit, Lepidokrit)
-    hematite = np.loadtxt(os.path.join(folder, 'Hämatit - Fe2O3', 'fe2o3-processed-2.txt'), delimiter=',', skiprows=10)
-    magnetite = np.loadtxt(os.path.join(folder, 'Magnetit-Fe3O4', 'fe3o4-processed.txt'), delimiter=',', skiprows=10)
+    kaffee = np.loadtxt('../Data/SS25Gr1/Kaffee/001.tsv', delimiter='\t', skiprows=8)
+    dark_kaffee = np.loadtxt('../Data/SS25Gr1/Kaffee/002.tsv', delimiter='\t', skiprows=8)
+    ibu = np.loadtxt('../Data/SS25Gr1/Ibuprofen/001.tsv', delimiter='\t', skiprows=8)
+    dark_ibu = np.loadtxt('../Data/SS25Gr1/Silicium/001.tsv', delimiter='\t', skiprows=8)
 
-    goethite = np.loadtxt(os.path.join(folder, 'Goethit - a-FeOOH', 'a-feooh-raw.txt'), delimiter=',', skiprows=10)
-    lepido = np.loadtxt(os.path.join(folder, 'Lepidokrit - g-FeOOH', 'g-feooh-processed.txt'), delimiter=',', skiprows=10)
+    # Dark Korrektur und Baseline
+    corr_kaffee = norm(kaffee[:, 1] - dark_kaffee[:,1])
+    corr_ibu = norm(ibu[:, 1] - dark_ibu[:,1])
+    corr_data = norm(data[:, 1] - dark_data[:,1])
 
-
-    # 1. Gemeinsamen x-Bereich bestimmen (Schnittmenge aller Intervalle, um Extrapolation zu vermeiden)
-    x_min = max(hematite[:,0].min(),
-                magnetite[:,0].min(),
-                goethite[:,0].min(),
-                lepido[:,0].min(),
-                data[:,0].min()
-               )
-    x_max = min(hematite[:,0].max(),
-                magnetite[:,0].max(),
-                goethite[:,0].max(),
-                lepido[:,0].max(),
-                data[:,0].max()
-               )
-
-    # 2. Gemeinsamen x-Vektor erzeugen (z.B. 1000 Punkte)
-    common_x = np.linspace(x_min, x_max, 1000)
-
-    # Interpolation auf gemeinsamen Bereich und Baseline-Korrektur & Normierung
-    y_hem_raw = norm(np.interp(common_x, hematite[:, 0], hematite[:, 1]))
-    y_hem = norm(baseline_als(y_hem_raw, lam=1e6, p=0.001, niter=10)[1])
-
-    y_mag_raw = norm(np.interp(common_x, magnetite[:, 0], magnetite[:, 1]))
-    y_mag = norm(baseline_als(y_mag_raw, lam=1e6, p=0.001, niter=10)[1])
-
-    y_goet_raw = norm(np.interp(common_x, goethite[:, 0], goethite[:, 1]))
-    y_goet = norm(baseline_als(y_goet_raw, lam=1e6, p=0.001, niter=10)[1])
-
-    y_lepid_raw = norm(np.interp(common_x, lepido[:, 0], lepido[:, 1]))
-    y_lepid = norm(baseline_als(y_lepid_raw, lam=1e6, p=0.001, niter=10)[1])
-
-    y_spectrum = norm(np.interp(common_x, data[:, 0], data[:, 1]))
-
-    spectra = [y_hem,y_mag,y_goet,y_lepid]
-
-
-
-    return common_x, spectra, y_spectrum
+    refspectra = [corr_kaffee,corr_ibu]
+    return (
+        corr_data,
+        corr_ibu,
+        corr_kaffee,
+        dark_ibu,
+        dark_kaffee,
+        ibu,
+        kaffee,
+        refspectra,
+    )
 
 
 @app.cell(hide_code=True)
 def _(mo):
     # Create sliders using Marimo's slider API (0–10)
     s1 = mo.ui.slider(
-        label="Hämatit", start=0, stop=1, step=0.01, value=0.01,
+        label="Kaffee", start=0, stop=1, step=0.01, value=0.01,
     )
     s2 = mo.ui.slider(
-        label="Magnetit", start=0, stop=1, step=0.01, value=0.01,
+        label="Ibuprofen", start=0, stop=1, step=0.01, value=0.01,
     )
     s3 = mo.ui.slider(
-        label="Goethit", start=0, stop=1, step=0.01, value=0.01,
-    )
-    s4 = mo.ui.slider(
-        label="Lepidokrit", start=0, stop=1, step=0.01, value=0.01,
-    )
-    s5 = mo.ui.slider(
         label="Baseline - m", start=-1e-4, stop=1e-4, step=1e-6, value=0
     )
-    s6 =  mo.ui.slider(
+    s4 =  mo.ui.slider(
         label="Baseline - b", start=-1, stop=1, step=0.01, value=0
     )
     # Arrange sliders horizontally
-    mo.hstack([s1, s2, s3,s4,s5,s6])
-
-    return s1, s2, s3, s4, s5, s6
+    mo.hstack([s1, s2, s3,s4])
+    return s1, s2, s3, s4
 
 
 @app.cell(hide_code=True)
-def _(
-    common_x,
-    go,
-    make_subplots,
-    mo,
-    s1,
-    s2,
-    s3,
-    s4,
-    s5,
-    s6,
-    spectra,
-    y_spectrum,
-):
+def _(corr_data, data, go, make_subplots, mo, refspectra, s1, s2, s3, s4):
     # Spektren mit Faktor
-    y1 = s1.value * spectra[0]
-    y2 = s2.value * spectra[1]
-    y3 = s3.value * spectra[2]
-    y4 = s4.value * spectra[3]
+    y1 = s1.value * refspectra[0]
+    y2 = s2.value * refspectra[1]
+
 
     # Kombination 
-    y_combined = y1+y2+y3+y4 + s5.value * common_x + s6.value
-    y_residual = y_spectrum - y_combined
+    y_combined = y1+y2+ s3.value * data[:,0] + s4.value
+    y_residual = corr_data - y_combined
 
     s_a = s1.value/(s1.value+s2.value+s3.value+s4.value)*100
     s_b = s2.value/(s1.value+s2.value+s3.value+s4.value)*100
-    s_c = s3.value/(s1.value+s2.value+s3.value+s4.value)*100
-    s_d = s4.value/(s1.value+s2.value+s3.value+s4.value)*100
 
     fig = make_subplots(
         rows=2, cols=1,
@@ -217,37 +185,28 @@ def _(
 
     # Main plot traces in first row
     fig.add_trace(go.Scatter(
-        x=common_x, y=y1, mode='lines', name='Hämatit',
+        x=data[:,0], y=y1, mode='lines', name='Kaffee',
         line=dict(color='green', width=2, dash='dash'), opacity=0.8
     ), row=1, col=1)
     fig.add_trace(go.Scatter(
-        x=common_x, y=y2, mode='lines', name='Magnetit',
+        x=data[:,0], y=y2, mode='lines', name='Ibuprofen',
         line=dict(color='coral', width=2, dash='dash'), opacity=0.8
     ), row=1, col=1)
     fig.add_trace(go.Scatter(
-        x=common_x, y=y3, mode='lines', name='Goethit',
-        line=dict(color='steelblue', width=2, dash='dash'), opacity=0.8
-    ), row=1, col=1)
-    fig.add_trace(go.Scatter(
-        x=common_x, y=y4, mode='lines', name='Lepidokrit',
-        line=dict(color='grey', width=2, dash='dash'), opacity=0.8
-    ), row=1, col=1)
-
-    fig.add_trace(go.Scatter(
-        x=common_x, y=s5.value*common_x + s6.value, mode='lines', name='Baseline',
+        x=data[:,0], y=s3.value*data[:,0] + s4.value, mode='lines', name='Baseline',
         line=dict(color='black', width=2, dash='dash'), opacity=0.8
     ), row=1, col=1)
 
     # Combined spectrum 
-    fig.add_trace(go.Scatter(x=common_x, y=y_combined, mode='lines', name=f'Fit (A={s_a:.2f}, B={s_b:.2f}, C={s_c:.2f}, D={s_d:.2f})',
+    fig.add_trace(go.Scatter(x=data[:,0], y=y_combined, mode='lines', name=f'Fit (A={s_a:.2f}, B={s_b:.2f})',
                              line=dict(color='black', width=2)), row=1, col=1)
-    # Test spectrum 
-    fig.add_trace(go.Scatter(x=common_x, y=y_spectrum, mode='lines', name=f'Spektrum',
+    # Experimentelles spectrum 
+    fig.add_trace(go.Scatter(x=data[:,0], y=corr_data, mode='lines', name=f'Spektrum',
                              line=dict(color='red', width=2)), row=1, col=1)
 
 
     # Residuals in second row
-    fig.add_trace(go.Scatter(x=common_x, y=y_residual, mode='lines', name='Residuals',line=dict(color='steelblue')), row=2, col=1)
+    fig.add_trace(go.Scatter(x=data[:,0], y=y_residual, mode='lines', name='Residuals',line=dict(color='steelblue')), row=2, col=1)
 
 
 
@@ -264,8 +223,7 @@ def _(
     )
 
     mo.ui.plotly(fig)
-
-    return
+    return fig, s_a, s_b, y1, y2, y_combined, y_residual
 
 
 @app.cell
